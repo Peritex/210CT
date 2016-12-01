@@ -1,0 +1,6 @@
+﻿  ConsoleApplication1.cpp
+d:\josh\documents\210ct\week2_task1\consoleapplication1\consoleapplication1.cpp(10): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+d:\josh\documents\210ct\week2_task1\consoleapplication1\consoleapplication1.cpp(11): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+d:\josh\documents\210ct\week2_task1\consoleapplication1\consoleapplication1.cpp(12): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  ConsoleApplication1.vcxproj -> D:\Josh\Documents\210CT\Week2_Task1\Debug\ConsoleApplication1.exe
+  ConsoleApplication1.vcxproj -> D:\Josh\Documents\210CT\Week2_Task1\Debug\ConsoleApplication1.pdb (Full PDB)
