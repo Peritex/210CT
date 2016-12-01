@@ -1,0 +1,4 @@
+﻿  Week4_Task1.cpp
+d:\josh\documents\210ct\week4_task1\week4_task1\week4_task1.cpp(35): warning C4805: '==': unsafe mix of type 'int' and type 'bool' in operation
+  Week4_Task1.vcxproj -> D:\Josh\Documents\210CT\Week4_Task1\Debug\Week4_Task1.exe
+  Week4_Task1.vcxproj -> D:\Josh\Documents\210CT\Week4_Task1\Debug\Week4_Task1.pdb (Full PDB)
