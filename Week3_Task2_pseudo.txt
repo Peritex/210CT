@@ -1,0 +1,19 @@
+Function isPrime (n,d)
+	set d to 3
+	if (n<2)
+		return 0
+	if (d>10)
+		return true
+	else
+		if (n%d = 0)
+			return false
+		else
+			return isPrime(n,d+2)
+			
+			
+set in to get input
+set out to call isPrime(in, 3)
+if (out == true)
+	print "prime"
+else
+	print "not prime"
