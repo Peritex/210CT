@@ -3,31 +3,52 @@
 
 #include "stdafx.h"
 #include <iostream>
-#include <string>
-
 
 int main()
 {
-	using namespace std;
-	string input, output;
-	int last = 0;
-	cout << "Enter words:";
-	getline(cin, input);
-//	last = input.size();
-	for (int i = input.size(); i >= 0; i--)
+	char s[] = ":) works this Hopefully";
+	std::cout << s << '\n';
+
+	size_t len = 0, i, j;
+	while (s[len])
+		++len;
+
+	// reverse entire sequence
+	i = 0, j = len;
+	while (i < j--)
 	{
-//		cout << i << endl;
-		if (input.compare(i, 1, " ") == 0)
-		{
-			last = i;
-			cout << input.substr(i, last) << endl;
-		}
-		else if (i < 1)
-		{
-			cout << input.substr(i, last) << endl;
-		}
+		char c = s[i]; // or use std::swap
+		s[i++] = s[j];
+		s[j] = c;
 	}
 
-    return 0;
+	// walk again, reversing each word.
+	i = 0;
+	while (s[i])
+	{
+		// skip ws; root 'i' at beginning of word
+		while (s[i] == ' ') // or use std::isspace
+			++i;
+
+		// skip until ws or eos; root 'j' at one-past end of word
+		j = i;
+		while (s[j] && s[j] != ' ') // or use !std::isspace
+			++j;
+
+		// remember the last position
+		size_t last = j;
+		while (i < j--)
+		{
+			char c = s[i]; // or use std::swap
+			s[i++] = s[j];
+			s[j] = c;
+		}
+
+		// start at last-left posiion
+		i = last;
+	}
+
+	std::cout << s << '\n';
+	return 0;
 }
 
