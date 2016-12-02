@@ -1,0 +1,12 @@
+def math (num)
+	set num to sqrt of num
+	set num to floor of num
+	set num to num * num
+	return num
+	
+set max to 0
+set ans to 0
+print "enter number"
+get input as max
+call math (max) set ans to return
+print ans
